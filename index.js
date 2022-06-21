@@ -11,22 +11,20 @@ function isPalindrome(word) {
 
 if (require.main === module) {
   console.log("Expecting: true");
+  console.log("=>", isPalindrome("abba"));
+
+ console.log("Expecting: true");
   console.log("=>", isPalindrome("racecar"));
-
-  console.log("");
-
-  console.log("Expecting: false");
-  console.log("=>", isPalindrome("robot"));
-
-  console.log("");
 
   console.log("Expecting: true");
   console.log("=>", isPalindrome("a"));
 
-  console.log("");
+  console.log("Expecting: false");
+  console.log("=>", isPalindrome("robot"));
 
-  console.log("Expecting: true");
-  console.log("=>", isPalindrome(""));
+  console.log("Expecting: false");
+  console.log("=>", isPalindrome("ab"));
+
 }
 
 module.exports = isPalindrome;
